@@ -727,6 +727,13 @@ footer .footer-content .column a .fa-instagram:hover {
   }
 }
 
+@media (max-width: 384px) {
+  .contact .contact-content .column.right {
+    margin-top: 50px;
+    margin-bottom: -20px;
+  }
+}
+
 @media (max-width: 320px) {
   .home .home-content {
     margin: -20px;
