@@ -283,12 +283,8 @@
   padding-top: 7vh;
 }
 
-.wrapper .container .works .content .main-content .images .image {
-  border: 2px solid red;
-  border-radius: 5px;
-}
-
 .wrapper .container .works .content .main-content .images .image img {
+  border: 3px solid red;
   border-radius: 5px;
   width: 100%;
   height: 100%;

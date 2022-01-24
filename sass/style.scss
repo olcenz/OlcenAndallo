@@ -252,9 +252,8 @@
                         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
                         padding-top: 7vh;
                         .image{
-                            border: 2px solid red;
-                            border-radius: 5px;
                             img{
+                                border: 3px solid red;
                                 border-radius: 5px;
                                 width: 100%;
                                 height: 100%;
