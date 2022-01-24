@@ -461,9 +461,11 @@
     z-index: 999;
     position: relative;
     display: grid;
+    cursor: pointer;
+    border: 1px solid red;
   }
   .wrapper .navbar .nav-logo .burgers .burger {
-    transition: ease-in-out .5s;
+    transition: ease-in-out .3s;
   }
   .wrapper .navbar .nav-links {
     position: absolute;
@@ -486,9 +488,6 @@
   }
   .wrapper .navbar .nav-links .nav-link a {
     border: none;
-  }
-  .wrapper .navbar .nav-links .nav-link:hover {
-    background: gray;
   }
   .wrapper .navbar.active .nav-logo .burgers .burger1 {
     transform: rotate(405deg);
@@ -595,11 +594,11 @@
     font-size: 3rem;
   }
   .wrapper .container .home .content .icons .icon a {
-    font-size: 6vw;
+    font-size: 2rem;
   }
   .wrapper .container .home .content .buttons .button {
-    padding: 10px;
-    font-size: 3vw;
+    padding: 15px;
+    font-size: 1rem;
   }
   .wrapper .container .about .content {
     padding: 2rem 2rem;
@@ -648,6 +647,18 @@
   .wrapper .footer {
     text-align: center;
     display: block;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  .wrapper html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

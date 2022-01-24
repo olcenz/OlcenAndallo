@@ -413,8 +413,10 @@
                     z-index: 999;
                     position: relative;
                     display: grid;
+                    cursor: pointer;
+                    border: 1px solid red;
                     .burger{
-                        transition: ease-in-out .5s;
+                        transition: ease-in-out .3s;
                     }
                 }
             }
@@ -437,10 +439,6 @@
                     padding: 4vw 6vw;
                     a{
                         border: none;
-                    }
-                    &:hover{
-                        background: gray;
-                        
                     }
                 }
             }
@@ -595,14 +593,14 @@
                     .icons{
                         .icon{
                             a{
-                                font-size: 6vw;
+                                font-size: 2rem;
                             }
                         }
                     }
                     .buttons{
                         .button{
-                            padding: 10px;
-                            font-size: 3vw;
+                            padding: 15px;
+                            font-size: 1rem;
                         }
                     }
                 }
@@ -675,14 +673,15 @@
     }
 
 
-    // Height
-    // @media screen and (max-height: 400px) {
-    //     .navbar{
-    //         .nav-links{
-    //             display: flex;
-    //             width: 100vw;
-    //         }
-    //     }
-        
-    // }
+    @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+        html {
+        transform: rotate(-90deg);
+        transform-origin: left top;
+        width: 100vh;
+        overflow-x: hidden;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        }
+    }
 }
