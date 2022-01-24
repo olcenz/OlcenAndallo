@@ -79,6 +79,7 @@
 
 .wrapper .container section {
   min-height: 100vh;
+  width: 100%;
   overflow-y: hidden;
 }
 
@@ -86,6 +87,7 @@
   background-image: url("../img/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   color: white;
   display: flex;
   justify-content: left;
