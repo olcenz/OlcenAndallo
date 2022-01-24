@@ -1,0 +1,653 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.wrapper {
+  display: grid;
+}
+
+.wrapper .navbar {
+  position: fixed;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6vw;
+  z-index: 999;
+}
+
+.wrapper .navbar .nav-logo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper .navbar .nav-logo .logo h1 {
+  font-size: 2rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+.wrapper .navbar .nav-logo .logo h1 span {
+  color: crimson;
+}
+
+.wrapper .navbar .nav-logo .burgers {
+  padding: 5px;
+  display: none;
+  gap: 1px;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper .navbar .nav-logo .burgers .burger {
+  height: 4px;
+  width: 30px;
+  background: white;
+}
+
+.wrapper .navbar .nav-links {
+  display: flex;
+  list-style: none;
+  gap: 5vw;
+}
+
+.wrapper .navbar .nav-links .nav-link a {
+  color: white;
+  border-bottom: 2px solid crimson;
+  padding: 0 .5vw .2rem .5vw;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.wrapper .navbar .nav-links .nav-link a:hover {
+  border-top: 2px solid crimson;
+  background: white;
+  color: crimson;
+}
+
+.wrapper .navbar.scrolled {
+  background: black;
+  padding: 1rem 6vw;
+}
+
+.wrapper .container section {
+  min-height: 100vh;
+  overflow-y: hidden;
+}
+
+.wrapper .container .home {
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.wrapper .container .home .content {
+  padding: 0 12vw;
+}
+
+.wrapper .container .home .content .greet h4 {
+  font-size: 2.5rem;
+  color: crimson;
+  text-shadow: 2px 2px gray;
+}
+
+.wrapper .container .home .content .greet h3 {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px gray;
+}
+
+.wrapper .container .home .content .greet h1 {
+  color: crimson;
+  text-shadow: 2px 2px gray;
+  font-size: 4rem;
+}
+
+.wrapper .container .home .content .icons {
+  padding-top: 1rem;
+  display: flex;
+  list-style: none;
+  gap: 2vw;
+}
+
+.wrapper .container .home .content .icons .icon a {
+  color: white;
+  font-size: 2rem;
+  text-shadow: 1px 1px gray;
+}
+
+.wrapper .container .home .content .icons .icon a:hover {
+  color: crimson;
+  text-shadow: 2px 2px gray;
+}
+
+.wrapper .container .home .content .buttons {
+  padding: 2rem 0px;
+  display: flex;
+  gap: 2vw;
+}
+
+.wrapper .container .home .content .buttons .button {
+  color: white;
+  font-weight: bold;
+  padding: 1rem;
+  border: 3px solid crimson;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+
+.wrapper .container .home .content .buttons .button:hover {
+  background: crimson;
+}
+
+.wrapper .container .about {
+  background: crimson;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper .container .about .content {
+  text-align: center;
+  display: block;
+  padding: 5vh 10vw 7vh 10vw;
+}
+
+.wrapper .container .about .content .title span {
+  color: white;
+  text-shadow: 2px 2px black;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.wrapper .container .about .content .title span::before, .wrapper .container .about .content .title span::after {
+  content: "";
+  width: 30px;
+  height: 4px;
+  position: absolute;
+  background: black;
+}
+
+.wrapper .container .about .content .title span::before {
+  transform: translateX(-40px) translateY(8px);
+}
+
+.wrapper .container .about .content .title span::after {
+  transform: translateX(12px) translateY(8px);
+}
+
+.wrapper .container .about .content .main-content {
+  padding-top: 10vh;
+}
+
+.wrapper .container .about .content .main-content .text {
+  font-size: 6vw;
+  color: white;
+  text-transform: capitalize;
+}
+
+.wrapper .container .about .content .main-content p {
+  font-size: 1.5rem;
+  padding: 0 6vw;
+  color: white;
+  line-height: 2rem;
+}
+
+.wrapper .container .about .content .main-content p span {
+  font-weight: bold;
+  border-bottom: 4px solid black;
+}
+
+.wrapper .container .about .content .main-content .boxes {
+  display: grid;
+  grid-gap: .5rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-self: center;
+  padding-top: 7vh;
+}
+
+.wrapper .container .about .content .main-content .boxes .box {
+  padding: 2rem 0;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  display: grid;
+  gap: 1rem;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .container .about .content .main-content .boxes .box h1 {
+  font-size: 2vw;
+  text-shadow: 2px 2px black;
+}
+
+.wrapper .container .about .content .main-content .boxes .box i {
+  font-size: 5vw;
+  text-shadow: 4px 4px black;
+}
+
+.wrapper .container .works .content {
+  text-align: center;
+  display: block;
+  padding: 5vh 10vw 7vh 10vw;
+}
+
+.wrapper .container .works .content .title span {
+  color: crimson;
+  text-shadow: 1px 1px black;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.wrapper .container .works .content .title span::before, .wrapper .container .works .content .title span::after {
+  content: "";
+  width: 30px;
+  height: 4px;
+  position: absolute;
+  background: black;
+}
+
+.wrapper .container .works .content .title span::before {
+  transform: translateX(-40px) translateY(8px);
+}
+
+.wrapper .container .works .content .title span::after {
+  transform: translateX(12px) translateY(8px);
+}
+
+.wrapper .container .works .content .main-content {
+  padding-top: 10vh;
+}
+
+.wrapper .container .works .content .main-content .text {
+  font-size: 3vw;
+  color: black;
+}
+
+.wrapper .container .works .content .main-content .images {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding-top: 7vh;
+}
+
+.wrapper .container .works .content .main-content .images .image {
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+.wrapper .container .works .content .main-content .images .image img {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper .container .contact {
+  background: crimson;
+}
+
+.wrapper .container .contact .content {
+  text-align: center;
+  display: block;
+  padding: 5vh 10vw 7vh 10vw;
+}
+
+.wrapper .container .contact .content .title span {
+  color: white;
+  text-shadow: 2px 2px black;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.wrapper .container .contact .content .title span::before, .wrapper .container .contact .content .title span::after {
+  content: "";
+  width: 30px;
+  height: 4px;
+  position: absolute;
+  background: black;
+}
+
+.wrapper .container .contact .content .title span::before {
+  transform: translateX(-40px) translateY(8px);
+}
+
+.wrapper .container .contact .content .title span::after {
+  transform: translateX(12px) translateY(8px);
+}
+
+.wrapper .container .contact .content .main-content {
+  padding: 10vh 7vw 0 7vw;
+}
+
+.wrapper .container .contact .content .main-content .text {
+  font-size: 3vw;
+  color: black;
+}
+
+.wrapper .container .contact .content .main-content .message {
+  padding-top: 7vh;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.wrapper .container .contact .content .main-content .message .form {
+  padding: 4rem 2rem;
+  text-align: left;
+  border: 1px solid black;
+  background: #0c0b0b;
+}
+
+.wrapper .container .contact .content .main-content .message .form h1 {
+  color: crimson;
+  text-transform: uppercase;
+  padding-bottom: 7vh;
+}
+
+.wrapper .container .contact .content .main-content .message .form .form-input .inputs {
+  display: grid;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.wrapper .container .contact .content .main-content .message .form .form-input .inputs input, .wrapper .container .contact .content .main-content .message .form .form-input .inputs textarea {
+  background: #1b1919;
+  border: transparent;
+  outline: none;
+  padding: 1rem;
+  color: white;
+  font-size: 1rem;
+}
+
+.wrapper .container .contact .content .main-content .message .form .form-input .inputs input:focus, .wrapper .container .contact .content .main-content .message .form .form-input .inputs textarea:focus {
+  border-bottom: 3px solid crimson;
+}
+
+.wrapper .container .contact .content .main-content .message .form .form-input .form-submit {
+  background: crimson;
+  width: 100%;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.wrapper .container .contact .content .main-content .message .form .form-input .form-submit:hover {
+  background: #e73256;
+}
+
+.wrapper .container .contact .content .main-content .message .info {
+  border: 1px solid black;
+  background: black;
+  color: white;
+  padding: 4rem 2rem;
+  display: grid;
+  grid-template-rows: .4fr 2fr;
+  text-align: left;
+}
+
+.wrapper .container .contact .content .main-content .message .info h1 {
+  color: crimson;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.wrapper .container .contact .content .main-content .message .info .contact-info {
+  display: grid;
+}
+
+.wrapper .container .contact .content .main-content .message .info .contact-info .contact-details {
+  text-align: left;
+}
+
+.wrapper .container .contact .content .main-content .message .info .contact-info .contact-details > span {
+  display: block;
+}
+
+.wrapper .container .contact .content .main-content .message .info .contact-info .contact-details .head {
+  font-weight: bold;
+  color: crimson;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+
+.wrapper .container .contact .content .main-content .message .info .contact-info .contact-details .contact-detail {
+  color: #a3a2a2;
+}
+
+.wrapper .container .contact .content .main-content .message .info .contact-info .contact-details .social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.wrapper .container .contact .content .main-content .message .info .contact-info .contact-details .social-icons a {
+  color: white;
+  font-size: 2rem;
+}
+
+.wrapper .container .contact .content .main-content .message .info .contact-info .contact-details .social-icons a:hover {
+  color: crimson;
+}
+
+.wrapper .footer {
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper .navbar {
+    padding: 1rem 3vw;
+    display: block;
+  }
+  .wrapper .navbar .nav-logo .burgers {
+    z-index: 999;
+    position: relative;
+    display: grid;
+  }
+  .wrapper .navbar .nav-logo .burgers .burger {
+    transition: ease-in-out .5s;
+  }
+  .wrapper .navbar .nav-links {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 0;
+    background: black;
+    height: 100vh;
+    width: 50%;
+    padding: 5rem 0 10rem 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translateX(100%);
+    transition: ease-in-out .5s;
+  }
+  .wrapper .navbar .nav-links .nav-link {
+    padding: 4vw 6vw;
+  }
+  .wrapper .navbar .nav-links .nav-link a {
+    border: none;
+  }
+  .wrapper .navbar .nav-links .nav-link:hover {
+    background: gray;
+  }
+  .wrapper .navbar.active .nav-logo .burgers .burger1 {
+    transform: rotate(405deg);
+    position: absolute;
+    margin-left: 5px;
+  }
+  .wrapper .navbar.active .nav-logo .burgers .burger2 {
+    transform: translateX(-20px);
+    background: none;
+  }
+  .wrapper .navbar.active .nav-logo .burgers .burger3 {
+    transform: rotate(-405deg);
+    position: absolute;
+    margin-left: 5px;
+  }
+  .wrapper .navbar.active .nav-links {
+    transform: translateX(0);
+  }
+  .wrapper .container .home .content .greet h4 {
+    font-size: 6vw;
+  }
+  .wrapper .container .home .content .greet h3 {
+    font-size: 6vw;
+  }
+  .wrapper .container .home .content .greet h1 {
+    font-size: 8vw;
+  }
+  .wrapper .container .home .content .icons .icon a {
+    font-size: 4vw;
+  }
+  .wrapper .container .about .content {
+    padding: 2rem 2rem;
+  }
+  .wrapper .container .about .content .main-content .text {
+    font-size: 10vw;
+  }
+  .wrapper .container .about .content .main-content p {
+    padding: 0 0;
+    font-size: 3vw;
+  }
+  .wrapper .container .about .content .main-content .boxes .box h1 {
+    font-size: 4vw;
+  }
+  .wrapper .container .about .content .main-content .boxes .box i {
+    font-size: 6vw;
+  }
+  .wrapper .container .works .content {
+    padding: 2rem 2rem;
+  }
+  .wrapper .container .works .content .main-content .text {
+    font-size: 4vw;
+  }
+  .wrapper .container .contact .content {
+    padding: 2rem 2rem;
+  }
+  .wrapper .container .contact .content .main-content {
+    padding: 10vh 4vw 0 4vw;
+  }
+  .wrapper .container .contact .content .main-content .text {
+    font-size: 5vw;
+  }
+  .wrapper .container .contact .content .main-content .message {
+    grid-template-columns: 1fr;
+  }
+  .wrapper .container .contact .content .main-content .message .info {
+    text-align: center;
+  }
+  .wrapper .container .contact .content .main-content .message .info h1 {
+    padding-bottom: 1rem;
+  }
+  .wrapper .container .contact .content .main-content .message .info .contact-info {
+    gap: 1rem;
+  }
+  .wrapper .container .contact .content .main-content .message .info .contact-info .contact-details {
+    text-align: center;
+  }
+  .wrapper .container .contact .content .main-content .message .info .contact-info .contact-details .head {
+    padding: 2rem 4rem;
+  }
+  .wrapper .container .contact .content .main-content .message .info .contact-info .social-icons {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .wrapper .navbar .nav-logo .logo {
+    position: relative;
+    z-index: -2;
+  }
+  .wrapper .navbar .nav-links {
+    width: 100%;
+    height: 100vh;
+  }
+  .wrapper .container .home .content {
+    padding-left: 2rem;
+  }
+  .wrapper .container .home .content .greet h4 {
+    font-size: 2.5rem;
+  }
+  .wrapper .container .home .content .greet h3 {
+    font-size: 2.5rem;
+  }
+  .wrapper .container .home .content .greet h1 {
+    font-size: 3rem;
+  }
+  .wrapper .container .home .content .icons .icon a {
+    font-size: 6vw;
+  }
+  .wrapper .container .home .content .buttons .button {
+    padding: 10px;
+    font-size: 3vw;
+  }
+  .wrapper .container .about .content {
+    padding: 2rem 2rem;
+  }
+  .wrapper .container .about .content .main-content {
+    padding-top: 2rem;
+  }
+  .wrapper .container .about .content .main-content p {
+    padding: 0 0;
+    font-size: 1rem;
+    text-align: justify;
+  }
+  .wrapper .container .about .content .main-content .boxes {
+    padding: 2rem 0 0 0;
+    gap: 0;
+  }
+  .wrapper .container .about .content .main-content .boxes .box {
+    padding: 1.5rem;
+    border: none;
+    border-bottom: 2px solid black;
+  }
+  .wrapper .container .about .content .main-content .boxes .box h1 {
+    font-size: 2.5rem;
+  }
+  .wrapper .container .about .content .main-content .boxes .box i {
+    font-size: 3.5rem;
+  }
+  .wrapper .container .about .content .main-content .boxes .box.html {
+    border-top: 2px solid black;
+  }
+  .wrapper .container .works .content {
+    padding: 2rem 2rem;
+  }
+  .wrapper .container .works .content .main-content .text {
+    font-size: 7vw;
+  }
+  .wrapper .container .contact .content {
+    padding: 2rem 1rem;
+  }
+  .wrapper .container .contact .content .main-content {
+    padding: 10vh 0 0 0;
+  }
+  .wrapper .container .contact .content .main-content .text {
+    font-size: 8vw;
+  }
+  .wrapper .footer {
+    text-align: center;
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World;</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/index.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="nav-logo">
+                <div class="logo">
+                    <h1>Olcen<span>;</span></h1>
+                </div>
+                <div class="burgers" onclick="burger()">
+                    <div class="burger burger1"></div>
+                    <div class="burger burger2"></div>
+                    <div class="burger burger3"></div>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li class="nav-link"><a href="#home" onclick="link()">Home</a></li>
+                <li class="nav-link"><a href="#about" onclick="link()">About</a></li>
+                <li class="nav-link"><a href="#works" onclick="link()">Skills</a></li>
+                <li class="nav-link"><a href="#contact" onclick="link()">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Content -->
+        <div class="container">
+            <!-- Home -->
+            <section class="home" id="home">
+                <div class="content">
+                    <div class="greet">
+                        <h4>Hello World,</h4>
+                        <h3>I am Olcen Andallo</h3>
+                        <h1>a Web Developer</h1>
+                    </div>
+                    <ul class="icons">
+                        <li class="icon"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li class="icon"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li class="icon"><a href="#"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                    <div class="buttons">
+                        <a href="#" class="button">hire me</a>
+                        <a href="#about" class="button">more about me</a>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- About -->
+            <section class="about" id="about">
+                <div class="content">
+                    <div class="title">
+                        <span>about me</span>
+                    </div>
+                    <div class="main-content">
+                        <h1 class="text">Hi there!</h1>
+                        <p>My name is <span>Olcen Andallo</span>, Lorem ipsum dolor sit amet 
+                            consectetur adipisicing elit. Adipisci cupiditate animi ad 
+                            aut, enim voluptatibus illo. Voluptatibus corporis fugiat 
+                            nobis facilis! Iusto adipisci eligendi, consequuntur itaque 
+                            quam necessitatibus sit dignissimos mollitia excepturi optio! 
+                            Eum eligendi minima blanditiis ex sunt? Accusantium!
+                        </p>
+                        <div class="boxes">
+                            <div class="box html">
+                                <h1>HTML</h1>
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <div class="box">
+                                <h1>CSS/SASS</h1>
+                                <i class="fab fa-css3"></i>
+                            </div>
+                            <div class="box ">
+                                <h1>JavaScript</h1>
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <div class="box">
+                                <h1>Laravel</h1>
+                                <i class="fab fa-laravel"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Skills -->
+            <section class="works" id="works">
+                <div class="content">
+                    <div class="title">
+                        <span>my works</span>
+                    </div>
+                    <div class="main-content">
+                        <div>
+                            <h1 class="text">These are the things that I like to do,</h1>
+                            <h1 class="text">check out my works</h1>
+                        </div>
+                        <div class="images">
+                            <div class="image image1">
+                                <img src="../img/background.jpg" alt="">
+                            </div>
+                            <div class="image image2">
+                                <img src="../img/background.jpg" alt="">
+                            </div>
+                            <div class="image image3">
+                                <img src="../img/background.jpg" alt="">
+                            </div>
+                            <div class="image image4">
+                                <img src="../img/background.jpg" alt="">
+                            </div>
+                            <div class="image image5">
+                                <img src="../img/background.jpg" alt="">
+                            </div>
+                            <div class="image image6">
+                                <img src="../img/background.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Contact -->
+            <section class="contact" id="contact">
+                <div class="content">
+                    <div class="title">
+                        <span>contact</span>
+                    </div>
+                    <div class="main-content">
+                        <h1 class="text">Get in touch with me</h1>
+                        <div class="message">
+                            <div class="form">
+                                <h1>send a message</h1>
+                                <form action="#" class="form-input">
+                                    <div class="inputs">
+                                        <input type="text" id="name" name="name" placeholder="Your Name">
+                                        <input type="text" id="name" name="name" placeholder="Your Email">
+                                        <input type="text" id="name" name="name" placeholder="Subject">
+                                        <textarea name="message" id="message" placeholder="Message here" rows="5"></textarea>
+                                    </div>
+                                    <button type="submit" class="form-submit">submit</button>
+                                </form>
+                            </div>
+                            <div class="info">
+                                <h1>contact info</h1>
+                                <div class="contact-info">
+                                    <div class="contact-details">
+                                        <span class="head">Email Me At</span>
+                                        <span class="contact-detail">thisIsmyEmail@gmail.com</span>
+                                        <span class="contact-detail">olcenandallo@gmail.com</span>
+                                    </div>
+
+                                    <div class="contact-details">
+                                        <span class="head">Call Me At</span>
+                                        <span class="contact-detail">Mobile: (+63)999 888 7777</span>
+                                        <span class="contact-detail">Mobile: (+63)999 666 5555</span>
+                                    </div>
+
+                                    <div class="contact-details">
+                                        <span class="head">
+                                            You can also find and message me on my social media accounts
+                                        </span>
+                                        <div class="social-icons">
+                                            <a href="https://www.facebook.com/olcenz"><i class="fab fa-facebook"></i></a>
+                                            <a href="https://www.instagram.com/olcenz"><i class="fab fa-instagram"></i></a>
+                                            <a href="https://www.github.com/olcenz"><i class="fab fa-github"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div>
+                <h3>&copy; Olcen Andallo</h3>
+            </div>
+            <div>
+                <h3>All rights reserved. 2022</h3>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
