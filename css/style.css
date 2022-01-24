@@ -460,7 +460,6 @@
     position: relative;
     display: grid;
     cursor: pointer;
-    border: 1px solid red;
   }
   .wrapper .navbar .nav-logo .burgers .burger {
     transition: ease-in-out .3s;
